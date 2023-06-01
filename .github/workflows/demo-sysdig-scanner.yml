@@ -2,7 +2,7 @@ env:
     SYSDIG_SECURE_ENDPOINT: "https://secure.sysdig.com"
     REGISTRY_HOST: "ghcr.io"
     IMAGE_NAME: "sysdig-cli-scanner"
-    DOCKERFILE_CONTEXT: "container-image/"
+    DOCKERFILE_CONTEXT: "demo-image-testing/"
   
 name: Build, scan and push the sysdig-cli-scanner container
 
