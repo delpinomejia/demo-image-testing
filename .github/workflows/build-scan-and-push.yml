@@ -26,12 +26,12 @@ jobs:
         tags: ${{ env.REGISTRY_HOST }}/${{ secrets.REGISTRY_USER }}/${{ env.IMAGE_NAME }}:${{ env.IMAGE_TAG }}
         load: true
     
-#     - name: Setup cache
-#       uses: actions/cache@v3
-#       with:
-#         path: cache
-#         key: ${{ runner.os }}-cache-${{ hashFiles('**/sysdig-cli-scanner', '**/latest_version.txt', '**/db/main.db.meta.json', '**/scanner-cache/inlineScannerCache.db') }}
-#         restore-keys: ${{ runner.os }}-cache-
+    - name: Setup cache
+      uses: actions/cache@v3
+      with:
+        path: cache
+        key: ${{ runner.os }}-cache-${{ hashFiles('**/sysdig-cli-scanner', '**/latest_version.txt', '**/db/main.db.meta.json', '**/scanner-cache/inlineScannerCache.db') }}
+        restore-keys: ${{ runner.os }}-cache-
 
     - name: Download sysdig-cli-scanner if needed
       run:  |
