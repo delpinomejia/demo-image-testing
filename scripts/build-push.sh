@@ -3,7 +3,7 @@
 # Export .NET tools to path
 export PATH="$PATH:/root/.dotnet/tools"
 
-# Login to Moxehub's Docker Hub
+# Login to Moxehub's 
 docker login -u "$DOCKER_HUB_USERNAME" -p "$DOCKER_HUB_PASSWORD"
 
 # Build the Docker image

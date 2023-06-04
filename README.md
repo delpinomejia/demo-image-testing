@@ -8,7 +8,7 @@ The workflow is as follows:
 3. Download the Snyk cli if needed
 4. Perform the scan
 5. Login to the registry
-6. Push the container image to a remote registry (optional)
+6. Push the container image to a remote registry (optional with provided `build-push.sh`script)
 
 The workflow leverages GitHub actions cache to avoid downloading the binary or
 the databases if they are available.
