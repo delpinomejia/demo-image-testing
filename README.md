@@ -1,4 +1,4 @@
-# GitHub CI DVulnetrability Scanning v1
+# GitHub CI Vulnerability Scanning v1
 
 In this demo we will use GitHub actions to build, scan for vulnerabilities and push a container image.
 The workflow is as follows:
